@@ -1,0 +1,286 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  color: white;
+  background-color: black;
+}
+
+/* Base Elements */
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 2rem;
+  /* font-weight: 900; - import */
+}
+
+h3 {
+  font-size: 1.125rem;
+}
+
+p {
+  font-size: 1.125rem;
+}
+
+button {
+  font-family: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section--border-bottom {
+  border-bottom: 6px solid rgb(45, 45, 45);
+}
+
+.section--img-text__container {
+  padding: 3.5em 1.5em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section--img-text__container__copy {
+  flex: 0 1 50%;
+  text-align: center;
+}
+
+.section--img-text__container__copy > p {
+  margin-top: 1rem;
+}
+
+.section--img-text__container__img-wrapper {
+  flex: 0 1 50%;
+}
+.section--img-text__container__img-wrapper > img {
+  width: 100%;
+}
+
+/* Hero */
+header {
+  padding: 1.5rem;
+}
+
+.hero {
+  height: 700px;
+  position: relative;
+}
+
+.hero__logo {
+  width: 89px;
+  height: 24px;
+}
+
+.hero__logo > img {
+  width: 100%;
+  height: 100%;
+}
+
+.hero__img-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: -1;
+}
+
+.hero__img-wrapper img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+
+.hero__img-wrapper__gradient {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(
+    to top,
+    rgb(0 0 0 / 0.8) 0,
+    rgb(0 0 0 / 0) 60%,
+    rgb(0 0 0 / 0.8) 100%
+  );
+}
+
+.hero__img-wrapper__overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(0 0 0 / 40%);
+}
+
+.hero__copy {
+  padding: 7.5em 0 2em;
+}
+
+.hero__copy > h1 {
+  text-align: center;
+}
+
+/* FAQ Section */
+.faq-section {
+  padding: 3.5em;
+}
+
+.faq-section__h2 {
+  text-align: center;
+}
+
+/* FAQ Accordion */
+.faq-accordion {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 1.5em;
+}
+
+.faq-accordion li {
+  margin-bottom: 0.5em;
+}
+
+.faq-accordion__button {
+  padding: 1.5em;
+  width: 100%;
+  background-color: rgb(45, 45, 45);
+  color: white;
+  border: none;
+  font-size: inherit;
+  transition-property: background-color;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.9, 0, 0.51, 1);
+  cursor: pointer;
+}
+
+.faq-accordion__button:hover {
+  background-color: rgb(60, 60, 60);
+}
+
+.faq-accordion__button > span {
+  /* text-align: left; - fix this */
+  font-size: inherit;
+}
+
+/* Footer */
+footer {
+  padding: 2rem 1.5rem;
+  font-size: 0.875rem;
+  color: rgb(255 255 255 / 0.7);
+}
+
+.call-cta {
+  font-size: 1rem;
+  margin-bottom: 0.75em;
+  display: inline-block;
+}
+
+.call-cta > a {
+  color: rgb(255 255 255 / 0.7);
+}
+
+.footer__links-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer__links-list li {
+  flex: 0 1 calc(50% - 0.75em);
+  margin-bottom: 1em;
+  margin-right: 0.75em;
+  max-width: 27ch;
+}
+
+.footer__links-list li > a {
+  color: rgb(255 255 255 / 0.7);
+}
+
+/* - - - - - - */
+
+/* Desktop */
+@media (min-width: 769px) {
+  /* Base Elements */
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  .section--img-text__container {
+    padding: 4.5em 2em;
+    flex-direction: row;
+  }
+
+  .section--img-text__container--img-left {
+    flex-direction: row-reverse;
+  }
+
+  .section--img-text__container__copy {
+    padding-right: 0.375em;
+    text-align: left;
+  }
+
+  .section--img-text__container--img-left__copy {
+    padding-right: 0;
+    padding-left: 0.375em;
+  }
+
+  .section--img-text__container__img-wrapper {
+    padding-left: 0.375em;
+  }
+
+  .section--img-text__container--img-left__img-wrapper {
+    padding-left: 0;
+    padding-right: 0.375em;
+  }
+
+  /* Hero */
+  .hero__copy {
+    padding: 9.875em 0 4em;
+  }
+
+  .hero__logo {
+    width: 148px;
+    height: 40px;
+  }
+
+  /* FAQ Section */
+  .faq-section {
+    padding: 4.5em;
+  }
+
+  /* Footer */
+  .footer__links-list li {
+    flex: 0 1 calc(25% - 0.75em);
+  }
+}
