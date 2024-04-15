@@ -174,67 +174,64 @@ button {
   text-align: center;
 }
 
-.email-cta-section__row-2 {
+.email-cta__form {
+  margin: 1em auto 0;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* width: fit-content; */
-  margin: 1em auto 0;
 }
 
-.email-cta-section__row-2 > form {
+.email-cta__form > label {
   width: 100%;
-  height: 50px;
-  display: inline-block;
-}
-
-.email-cta-section__row-2__email-input {
-  border-width: 1px;
-  border-style: solid;
-  border-radius: 0.25em;
-  background-color: rgb(22 22 22 / 0.7);
-  border-color: rgb(128 128 128 / 0.7);
+  flex: 1 1 50px;
   position: relative;
-  /* height: 100%; */
-  height: inherit;
-  /* pointer-events: ; */
 }
 
-.email-cta-section__row-2__email-input:active {
-  outline: 2px solid white;
-  outline-offset: 2px;
+.email-cta__form > label > span:first-child {
+  display: none;
 }
 
-.email-cta-section__row-2__email-input > input {
-  border: none;
-  background: none;
-  width: 100%;
-  height: 80%;
-  outline: none;
+.email-cta__form > label > input + span::after {
+  content: "Email address";
   position: absolute;
-  bottom: 0;
-  left: 0;
-  padding: 0 1em 0;
-  color: white;
-}
-
-.email-cta-section__row-2__email-input > label {
-  color: rgb(255 255 255 / 0.7);
-  position: absolute;
+  left: 1em;
   top: 50%;
   transform: translateY(-50%);
-  left: 1em;
+  color: rgb(255 255 255 / 0.7);
+  z-index: 999;
   transition: all 0.2s ease-out;
 }
 
-.email-cta-section__row-2__email-input > input:focus + label, .email-cta-section__row-2__email-input > input:not(:placeholder-shown) + label {
+.email-cta__form > label > input:focus + span::after,
+.email-cta__form > label > input:not(:placeholder-shown) + span::after {
   top: 25%;
   font-size: 0.65em;
   left: 1.25em;
 }
 
-.email-cta-section__cta-link {
+.email-cta__form > label > input {
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 0.25em;
+  background-color: rgb(22 22 22 / 0.7);
+  border-color: rgb(128 128 128 / 0.7);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  padding: 0.5em 1em 0;
+}
+
+.email-cta__form > label > input:focus {
+  outline: 2px solid white;
+  outline-offset: 2px;
+}
+
+.email-cta__form > button {
   text-decoration: none;
   border-radius: 0.25rem;
   background-color: #e50914;
@@ -246,11 +243,13 @@ button {
   transition-duration: 0.3s;
   transition-timing-function: ease-out;
   font-size: 1.5em;
-  flex: 1 0 fit-content;
+  flex: 0 1 fit-content;
   margin-top: 1em;
+  border: none;
+  cursor: pointer;
 }
 
-.email-cta-section__cta-link:hover {
+.email-cta__form > button:hover {
   background-color: #b20710;
 }
 
@@ -443,19 +442,15 @@ footer {
     height: 40px;
   }
 
-  .email-cta-section__row-2 {
+  .email-cta__form {
     flex-direction: row;
   }
 
-  .email-cta-section__row-2 {
-    flex-direction: row;
+  .email-cta__form > label {
+    height: 50px;
   }
 
-  .email-cta-section__row-2__email-input {
-    /* max-width: 300px; */
-  }
-
-  .email-cta-section__cta-link {
+  .email-cta__form > button {
     margin-left: 0.25em;
     margin-top: 0;
   }
