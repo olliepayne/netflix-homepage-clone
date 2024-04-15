@@ -168,6 +168,31 @@ button {
   text-align: center;
 }
 
+.email-cta-section__row-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.email-cta-section__cta-link {
+  text-decoration: none;
+  border-radius: 0.25rem;
+  background-color: #e50914;
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+  margin: 1em auto 0;
+  padding: 0.5em 1em;
+  transition-property: background-color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+  font-size: 1.5em;
+}
+
+.email-cta-section__cta-link:hover {
+  background-color: #b20710;
+}
+
 .email-cta-section--hero {
   margin-top: 1.5em;
 }
@@ -353,8 +378,13 @@ footer {
     height: 40px;
   }
 
+  .email-cta-section__row-2 {
+    flex-direction: row;
+  }
+
   /* CTA Card */
   .cta-card {
+    margin-top: -2em;
     background: radial-gradient(
       51.39% 511.66% at 47.68% -217.91%,
       #ff9900 0%,
