@@ -73,19 +73,18 @@ button {
 }
 
 /* Hero */
-header {
-  padding: 1.5rem;
-}
-
 .hero {
-  height: 700px;
+  height: 100%;
   position: relative;
+  padding-bottom: 2em;
 }
 
 .hero__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1.5em;
+  margin-bottom: 7.5em;
 }
 
 .hero__logo {
@@ -152,12 +151,25 @@ header {
   background-color: rgb(0 0 0 / 40%);
 }
 
-.hero__copy {
-  padding: 7.5em 0 2em;
-}
-
 .hero__copy > h1 {
   text-align: center;
+}
+
+.hero__copy > p {
+  margin-top: 1em;
+  text-align: center;
+}
+
+.email-cta-section {
+}
+
+.email-cta-section > h3 {
+  font-weight: normal;
+  text-align: center;
+}
+
+.email-cta-section--hero {
+  margin-top: 1.5em;
 }
 
 /* CTA Card */
@@ -327,8 +339,13 @@ footer {
   }
 
   /* Hero */
-  .hero__copy {
-    padding: 9.875em 0 4em;
+  .hero {
+    padding-bottom: 4em;
+  }
+
+  .hero__header {
+    margin-bottom: 7.5em;
+    padding: 1.5em 3em;
   }
 
   .hero__logo {
