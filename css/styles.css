@@ -82,6 +82,11 @@ header {
   position: relative;
 }
 
+.hero__header {
+  display: flex;
+  justify-content: space-between;
+}
+
 .hero__logo {
   width: 89px;
   height: 24px;
@@ -90,6 +95,23 @@ header {
 .hero__logo > img {
   width: 100%;
   height: 100%;
+}
+
+.link--sign-in-btn {
+  padding: 0.65em 1.25em;
+  border-radius: 0.25rem;
+  background-color: 	#E50914;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 13px;
+  transition-property: background-color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+.link--sign-in-btn:hover {
+ background-color: #B20710;
 }
 
 .hero__img-wrapper {
