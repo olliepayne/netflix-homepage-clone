@@ -166,12 +166,10 @@ button {
   text-align: center;
 }
 
-.email-cta-section {
-}
-
-.email-cta-section > h3 {
+.email-cta__h3 {
   font-weight: normal;
   text-align: center;
+  font-size: 1.125em;
 }
 
 .email-cta__form {
@@ -440,6 +438,10 @@ footer {
   .hero__logo {
     width: 148px;
     height: 40px;
+  }
+
+  .email-cta__h3 {
+    font-size: 1.25em;
   }
 
   .email-cta__form {
