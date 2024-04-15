@@ -100,7 +100,7 @@ header {
 .link--sign-in-btn {
   padding: 0.65em 1.25em;
   border-radius: 0.25rem;
-  background-color: 	#E50914;
+  background-color: #e50914;
   color: white;
   font-weight: bold;
   text-decoration: none;
@@ -111,7 +111,7 @@ header {
 }
 
 .link--sign-in-btn:hover {
- background-color: #B20710;
+  background-color: #b20710;
 }
 
 .hero__img-wrapper {
@@ -157,6 +157,33 @@ header {
 
 .hero__copy > h1 {
   text-align: center;
+}
+
+/* CTA Card */
+.cta-card-wrapper {
+  background-color: black;
+}
+
+.cta-card {
+  margin: 1.5em 1em 0;
+  border-radius: 4px;
+  padding: 1em 1.5em;
+  background: radial-gradient(
+    120.35% 220% at 49.86% -6.29%,
+    #e50914 0%,
+    #0e1b4f 46.15%,
+    #0d1121 100%
+  );
+}
+
+.cta-card__txt--price {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.cta-card__txt-plan {
+  font-size: 1em;
+  margin-top: 0.25em;
 }
 
 /* FAQ Section */
