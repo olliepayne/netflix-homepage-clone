@@ -172,6 +172,9 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin: 1em auto 0;
 }
 
 .email-cta-section__cta-link {
@@ -181,7 +184,6 @@ button {
   color: white;
   font-weight: bold;
   display: inline-block;
-  margin: 1em auto 0;
   padding: 0.5em 1em;
   transition-property: background-color;
   transition-duration: 0.3s;
@@ -195,6 +197,10 @@ button {
 
 .email-cta-section--hero {
   margin-top: 1.5em;
+}
+
+.enjoy-section > .container {
+  position: relative;
 }
 
 /* CTA Card */
@@ -382,9 +388,17 @@ footer {
     flex-direction: row;
   }
 
+  .email-cta-section__cta-link {
+    margin-left: 0.25em;
+  }
+
   /* CTA Card */
   .cta-card {
-    margin-top: -2em;
+    position: absolute;
+    z-index: 999;
+    /* margin-top: -2em; */
+    top: -3em;
+    width: 100%;
     background: radial-gradient(
       51.39% 511.66% at 47.68% -217.91%,
       #ff9900 0%,
