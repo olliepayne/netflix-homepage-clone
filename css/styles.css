@@ -195,21 +195,27 @@ button {
   border-radius: 0.25em;
   background-color: rgb(22 22 22 / 0.7);
   border-color: rgb(128 128 128 / 0.7);
-  /* padding: 1.5em 1em 0.5em; */
   position: relative;
   /* height: 100%; */
   height: inherit;
+  /* pointer-events: ; */
+}
+
+.email-cta-section__row-2__email-input:active {
+  outline: 2px solid white;
+  outline-offset: 2px;
 }
 
 .email-cta-section__row-2__email-input > input {
   border: none;
   background: none;
   width: 100%;
-  height: 100%;
+  height: 80%;
+  outline: none;
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
-  padding: 0 1em;
+  padding: 0 1em 0;
   color: white;
 }
 
@@ -222,9 +228,10 @@ button {
   transition: all 0.2s ease-out;
 }
 
-.email-cta-section__row-2__email-input > input:focus + label {
+.email-cta-section__row-2__email-input > input:focus + label, .email-cta-section__row-2__email-input > input:not(:placeholder-shown) + label {
   top: 25%;
   font-size: 0.65em;
+  left: 1.25em;
 }
 
 .email-cta-section__cta-link {
