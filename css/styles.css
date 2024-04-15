@@ -85,6 +85,7 @@ header {
 .hero__header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .hero__logo {
@@ -167,13 +168,18 @@ header {
 .cta-card {
   margin: 1.5em 1em 0;
   border-radius: 4px;
-  padding: 1em 1.5em;
+  padding: 1.5em 1em;
   background: radial-gradient(
     120.35% 220% at 49.86% -6.29%,
     #e50914 0%,
     #0e1b4f 46.15%,
     #0d1121 100%
   );
+}
+
+.cta-card__content-wrapper {
+  margin: 0 auto;
+  width: fit-content;
 }
 
 .cta-card__txt--price {
@@ -183,7 +189,14 @@ header {
 
 .cta-card__txt-plan {
   font-size: 1em;
-  margin-top: 0.25em;
+  margin: 0.25em 0 0.5em;
+}
+
+.cta-card__learn-more {
+  color: #448ef4;
+  font-weight: bold;
+  font-size: 1em;
+  display: inline-block;
 }
 
 /* FAQ Section */
@@ -321,6 +334,18 @@ footer {
   .hero__logo {
     width: 148px;
     height: 40px;
+  }
+
+  /* CTA Card */
+  .cta-card {
+    background: radial-gradient(
+      51.39% 511.66% at 47.68% -217.91%,
+      #ff9900 0%,
+      #e50914 17.27%,
+      #0e1b4f 79.44%,
+      #000413 100%
+    );
+    box-shadow: 0px -8px 25px rgba(0, 0, 0, 0.5);
   }
 
   /* FAQ Section */
