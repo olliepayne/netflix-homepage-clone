@@ -335,12 +335,61 @@ button {
   transform: translateX(-50%);
 }
 
-.section--watch-everywhere__media-wrapper__overlay {
+/* Watch Offline Section */
+.section--watch-offline__media-wrapper {
+  position: relative;
+}
+
+.section--watch-offline__media-wrapper__status-bar {
+  width: 68%;
+  padding: 0.5em 1em;
+  border-radius: 0.75em;
+  border: 2px solid rgb(128 128 128 / 0.7);
   position: absolute;
-  z-index: -1;
-  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 2em;
+  background-color: black;
+  height: 84px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section--watch-offline__media-wrapper__status-bar__boxshot {
+  display: inline-block;
   height: 100%;
-  /* background-color: black; */
+}
+
+.section--watch-offline__media-wrapper__status-bar__boxshot > img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.section--watch-offline__media-wrapper__status-bar__copy {
+  margin: 0 auto 0 0;
+  padding: 0 1em;
+  text-align: left;
+  display: inline-block;
+}
+
+.section--watch-offline__media-wrapper__status-bar__copy__show {
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+.section--watch-offline__media-wrapper__status-bar__copy__show + p {
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #0071eb;
+}
+
+.section--watch-offline__media-wrapper__status-bar__anim {
+  width: 48px;
+  height: 60px;
+  background: url("https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif")
+    center center no-repeat;
+  background-size: 100%;
 }
 
 /* FAQ Section */
@@ -472,7 +521,7 @@ footer {
 /* - - - - - - */
 
 /* Desktop */
-@media (min-width: 769px) {
+@media (min-width: 960px) {
   /* Base Elements */
   h1 {
     font-size: 3rem;
@@ -570,6 +619,19 @@ footer {
       #000413 100%
     );
     box-shadow: 0px -8px 25px rgba(0, 0, 0, 0.5);
+  }
+
+  /* Watch Offline Section */
+  .section--watch-offline__media-wrapper__status-bar {
+    height: 104px;
+  }
+
+  .section--watch-offline__media-wrapper__status-bar__copy__show {
+    font-size: 1rem;
+  }
+
+  .section--watch-offline__media-wrapper__status-bar__copy__show + p {
+    font-size: 0.875rem;
   }
 
   /* FAQ Section */
