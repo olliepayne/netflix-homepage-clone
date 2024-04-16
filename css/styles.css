@@ -242,7 +242,8 @@ button {
   background-color: var(--primary);
   color: white;
   font-weight: bold;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   padding: 0.75em 1em;
   transition-property: background-color;
   transition-duration: 0.3s;
@@ -252,6 +253,13 @@ button {
   margin-top: 1em;
   border: none;
   cursor: pointer;
+}
+
+.email-cta__form-btn__icon {
+  margin-left: 0.5em;
+  width: 20px;
+  height: 20px;
+  fill: white;
 }
 
 .email-cta__form > button:hover {
