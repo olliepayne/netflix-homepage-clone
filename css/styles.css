@@ -307,6 +307,20 @@ button {
   display: inline-block;
 }
 
+/* Enjoy Section */
+.section--enjoy__media-wrapper {
+  position: relative;
+}
+
+.section--enjoy__media-wrapper > video {
+  width: 73%;
+  position: absolute;
+  z-index: -2;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 /* Watch Everywhere Section */
 .section--watch-everywhere__media-wrapper {
   position: relative;
