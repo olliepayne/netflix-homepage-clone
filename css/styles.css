@@ -329,6 +329,7 @@ button {
 }
 
 .faq-accordion__tab > input {
+  margin: 0;
   position: absolute;
   /* z-index: 999; */
   width: 100%;
@@ -344,7 +345,14 @@ button {
 }
 
 .faq-accordion__tab > input:checked ~ .faq-accordion__tab__content {
-  max-height: 200px;
+  max-height: 350px;
+}
+
+.faq-accordion__tab
+  > input:checked
+  ~ .faq-accordion__tab__header
+  > .faq-accordion__tab__header__icon {
+  transform: rotateZ(45deg);
 }
 
 .faq-accordion__tab__header {
@@ -366,6 +374,14 @@ button {
 
 .faq-accordion__tab__header > h3 {
   font-weight: normal;
+}
+
+.faq-accordion__tab__header__icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  fill: white;
+  transition: all 0.1s;
 }
 
 .faq-accordion__tab__content {
@@ -531,6 +547,11 @@ footer {
 
   .faq-accordion__tab__header {
     height: 84px;
+  }
+
+  .faq-accordion__tab__header__icon {
+    width: 36px;
+    height: 36px;
   }
 
   /* Footer */
