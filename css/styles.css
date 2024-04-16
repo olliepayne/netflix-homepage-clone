@@ -166,14 +166,20 @@ button {
   height: 100%;
 }
 
+.hero__header__links {
+  display: flex;
+  align-items: center;
+}
+
 .link--sign-in-btn {
+  display: inline-block;
   padding: 0.65em 1.25em;
   border-radius: 0.25rem;
   background-color: var(--primary);
   color: white;
   font-weight: bold;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 0.8125rem;
   transition-property: background-color;
   transition-duration: 0.3s;
   transition-timing-function: ease-out;
