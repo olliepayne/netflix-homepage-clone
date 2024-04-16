@@ -1,4 +1,11 @@
-* {
+:root {
+  --primary: #e50914;
+  --secondary: #b20710;
+}
+
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -45,7 +52,7 @@ button {
 }
 
 .container--narrow {
-  max-width: 600px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 0 2em;
 }
@@ -106,7 +113,7 @@ button {
 .link--sign-in-btn {
   padding: 0.65em 1.25em;
   border-radius: 0.25rem;
-  background-color: #e50914;
+  background-color: var(--primary);
   color: white;
   font-weight: bold;
   text-decoration: none;
@@ -117,7 +124,7 @@ button {
 }
 
 .link--sign-in-btn:hover {
-  background-color: #b20710;
+  background-color: var(--secondary);
 }
 
 .hero__img-wrapper {
@@ -232,7 +239,7 @@ button {
 .email-cta__form > button {
   text-decoration: none;
   border-radius: 0.25rem;
-  background-color: #e50914;
+  background-color: var(--primary);
   color: white;
   font-weight: bold;
   display: inline-block;
@@ -248,7 +255,7 @@ button {
 }
 
 .email-cta__form > button:hover {
-  background-color: #b20710;
+  background-color: var(--secondary);
 }
 
 .email-cta-section--hero {
@@ -272,7 +279,7 @@ button {
   height: 200px;
   background: radial-gradient(
     120.35% 220% at 49.86% -6.29%,
-    #e50914 0%,
+    var(--primary) 0%,
     #0e1b4f 46.15%,
     #0d1121 100%
   );
